@@ -26,7 +26,7 @@ public class PlayerLoginTokenCheck {
 
     /**
      *  error return: {"status":"12","msg":"sign error","openid":null,"serverNo":null}
-     *  success return:
+     *  success return: {"status":"1","msg":"success","openid":null,"serverNo":""}
      * @param args
      */
     public static void main(String[] args) {
@@ -34,9 +34,7 @@ public class PlayerLoginTokenCheck {
         String mem_id = "92362503";
         String user_token = "JFMIXTK_2040618_80656_53650074";
         String sign = "";
-        String sourceStr = "app_id="+app_id+
-                "&mem_id="+mem_id+
-                "&user_token="+user_token+"&app_key="+KeysConfig.SERVER_KEY;
+        String sourceStr = "app_id="+app_id+"&mem_id="+mem_id+"&user_token="+user_token+"&app_key="+KeysConfig.SERVER_KEY;
         System.out.println("before sourceStr ="+sourceStr);
         sign = DigestUtils.md5Hex(sourceStr);
         System.out.println("after sign ="+sign);
