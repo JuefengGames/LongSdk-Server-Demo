@@ -13,6 +13,9 @@ public class OrderCallBackController {
     /**
      *Players purchase props in the game, and Juefeng Games will call this API after completing the payment.
      * For API-related parameters and signature rules, please check the API documentation.
+     *
+     * JuefengGames --> Developer
+     *
      */
     @ResponseBody
     @RequestMapping("/jfapi/callback")

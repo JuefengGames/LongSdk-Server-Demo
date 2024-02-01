@@ -6,12 +6,13 @@ Note: The code only demonstrates the basic logic, and is not recommended to be d
 
 
 ###  2、LongSDK documentation:
-  http://sdk.yiigames.com/
+http://sdk.yiigames.com/
 
 ### 3、Get Start
 ```
 Java 1.8
 Maven 3.x
+UTF-8
 ```
 
 ### 4、Contact Us
