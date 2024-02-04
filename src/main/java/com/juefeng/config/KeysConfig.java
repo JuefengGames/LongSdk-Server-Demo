@@ -8,7 +8,7 @@ public class KeysConfig {
     /**
      *  Please replace the following information with your own real information in order to continue the test
      */
-    public static final String APP_ID = "81462";
+    public static final String APP_ID = "81193";
 
     public static final String APP_KEY = "8226097A0EB794F76F4BB15E36608F18";
 

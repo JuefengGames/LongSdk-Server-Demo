@@ -1,7 +1,9 @@
 ### 1、 Content
 ```
+EN：
 This project is a demo of LongSDK server-side APIs for developers, including login authentication and order callback API code samples.
 Note: The code only demonstrates the basic logic, and is not recommended to be directly applied to your project.
+
 ```
 
 
