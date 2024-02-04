@@ -8,8 +8,9 @@ Note: The code only demonstrates the basic logic, and is not recommended to be d
 
 
 ###  2、LongSDK documentation:
-http://sdk.yiigames.com/
+EN:  http://www.juefeng.games/?lang=en_US
 
+CN: http://www.juefeng.games
 ### 3、Get Start
 ```
 Java 1.8
