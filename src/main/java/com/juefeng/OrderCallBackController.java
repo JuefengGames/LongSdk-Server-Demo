@@ -23,6 +23,8 @@ public class OrderCallBackController {
      *  Please note that the parameters are not in JSON format, so please receive them directly.
      *  like： request.getParameter("sign")
      *
+     *  post   application/x-www-form-urlencoded
+     *
      *  TestCase see：TestSentCallBack.java
      */
     @ResponseBody
