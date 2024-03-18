@@ -22,6 +22,8 @@ public class OrderCallBackController {
      *
      *  Please note that the parameters are not in JSON format, so please receive them directly.
      *  like： request.getParameter("sign")
+     *
+     *  TestCase see：TestSentCallBack.java
      */
     @ResponseBody
     @RequestMapping("/jfGame/callback")
