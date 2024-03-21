@@ -11,11 +11,15 @@ Note: The code only demonstrates the basic logic, and is not recommended to be d
 EN:  https://www.juefeng.games/?lang=en_US
 
 CN: https://www.juefeng.games
+
+Nodejs  https://github.com/JuefengGames/long-sdk-server-demo-nodejs
+
 ### 3、Get Start
 ```
 Java 1.8
 Maven 3.x
 UTF-8
+
 ```
 
 ### 4、Contact Us
