@@ -10,8 +10,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,12 +28,9 @@ public class PlayerLoginTokenCheck {
      *  success return: {"status":"1","msg":"success","openid":null,"serverNo":""}
      */
     public static String checkToken(String appId, String memId, String userToken){
-        String app_id = appId;
-        String mem_id = memId;
-        String user_token = userToken;
         String sign = "";
         // start sign
-        String sourceStr = "app_id="+app_id+"&mem_id="+mem_id+"&user_token="+user_token+"&app_key="+KeysConfig.SERVER_KEY;
+        String sourceStr = "app_id="+ appId +"&mem_id="+ memId +"&user_token="+ userToken +"&app_key="+KeysConfig.SERVER_KEY;
         System.out.println("before sourceStr ="+sourceStr);
         sign = DigestUtils.md5Hex(sourceStr);
         System.out.println("after sign ="+sign);
@@ -45,9 +40,9 @@ public class PlayerLoginTokenCheck {
             httpPost.setHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
             // parameters
             List<NameValuePair> params = new ArrayList<>();
-            params.add(new BasicNameValuePair("app_id",     app_id));
-            params.add(new BasicNameValuePair("mem_id",     mem_id));
-            params.add(new BasicNameValuePair("user_token", user_token));
+            params.add(new BasicNameValuePair("app_id", appId));
+            params.add(new BasicNameValuePair("mem_id", memId));
+            params.add(new BasicNameValuePair("user_token", userToken));
             params.add(new BasicNameValuePair("sign",       sign));
             httpPost.setEntity(new UrlEncodedFormEntity(params));
             CloseableHttpClient httpClient = HttpClients.createDefault();

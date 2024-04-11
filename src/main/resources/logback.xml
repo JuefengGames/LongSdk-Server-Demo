@@ -10,7 +10,6 @@
 
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-        <!--设置输出格式-->
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>${CONSOLE_LOG_PATTERN}</pattern>
         </encoder>

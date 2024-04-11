@@ -10,7 +10,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class TestSentCallBack {
         String sign = DigestUtils.md5Hex(devSignStr);
 
         try {
-            HttpPost httpPost = new HttpPost("http://localhost:8888/jfGame/callback");
+            HttpPost httpPost = new HttpPost("http://localhost:8888/juefeng/callback");
             httpPost.setHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
             // parameters
             List<NameValuePair> params = new ArrayList<>();
